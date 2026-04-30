@@ -22,38 +22,38 @@
       <td colspan="4"> <input class="input" type="text" id="result" placeholder="0" ></td>
     </tr>
     <tr>
-      <td> <input type="button" value="C" onclick="" class="button-operator"></td>
-      <td> <input type="button" value="DEL" onclick="" class="button-operator"></td>
-      <td> <input type="button" value="%" onclick="" class="button-operator"></td>
-      <td> <input type="button" value="/" onclick="" class="button-operator"></td>
+      <td> <input type="button" value="C" onclick="clearScreen()" class="button-operator"></td>
+      <td> <input type="button" value="DEL" onclick="clearScreen()" class="button-operator"></td>
+      <td> <input type="button" value="%" onclick="display('%')" class="button-operator"></td>
+      <td> <input type="button" value="/" onclick="display('/')" class="button-operator"></td>
     </tr>
 
     <tr>
-      <td> <input type="button" value="7" onclick="" class="button-number"></td> 
-      <td> <input type="button" value="8" onclick="" class="button-number"></td>    
-      <td> <input type="button" value="9" onclick="" class="button-number"></td>
-      <td> <input type="button" value="*" onclick="" class="button-operator"></td>
+      <td> <input type="button" value="7" onclick="display('7')" class="button-number"></td> 
+      <td> <input type="button" value="8" onclick="display('8')" class="button-number"></td>    
+      <td> <input type="button" value="9" onclick="display('9')" class="button-number"></td>
+      <td> <input type="button" value="*" onclick="display('*')" class="button-operator"></td>
     </tr>
 
     <tr>
-      <td> <input type="button" value="4" onclick="" class="button-number"></td>
-      <td> <input type="button" value="5" onclick="" class="button-number"></td>
-      <td> <input type="button" value="6" onclick="" class="button-number"></td>
-      <td> <input type="button" value="-" onclick="" class="button-operator"></td>
+      <td> <input type="button" value="4" onclick="display('4')" class="button-number"></td>
+      <td> <input type="button" value="5" onclick="display('5')" class="button-number"></td>
+      <td> <input type="button" value="6" onclick="display('6')" class="button-number"></td>
+      <td> <input type="button" value="-" onclick="display('-')" class="button-operator"></td>
     </tr>
 
     <tr>
-      <td> <input type="button" value="1" onclick="" class="button-number"></td>
-      <td> <input type="button" value="2" onclick="" class="button-number"></td>
-      <td> <input type="button" value="3" onclick="" class="button-number"></td>
-      <td> <input type="button" value="+" onclick="" class="button-operator"></td>
+      <td> <input type="button" value="1" onclick="display('1')" class="button-number"></td>
+      <td> <input type="button" value="2" onclick="display('2')" class="button-number"></td>
+      <td> <input type="button" value="3" onclick="display('3')" class="button-number"></td>
+      <td> <input type="button" value="+" onclick="display('+')" class="button-operator"></td>
     </tr>
     
     <tr>
-      <td> <input type="button" value="00" onclick="" class="button-number"></td>
-      <td> <input type="button" value="0" onclick="" class="button-number"></td>
-      <td> <input type="button" value="." onclick="" class="button-number"></td>
-      <td> <input type="button" value="=" onclick=""  class="equal-btn"></td>
+      <td> <input type="button" value="00" onclick="display('00')" class="button-number"></td>
+      <td> <input type="button" value="0" onclick="display('0')" class="button-number"></td>
+      <td> <input type="button" value="." onclick="display('.')" class="button-number"></td>
+      <td> <input type="button" value="=" onclick="calculate()"  class="equal-btn"></td>
     </tr>
   </table>
 </div>
